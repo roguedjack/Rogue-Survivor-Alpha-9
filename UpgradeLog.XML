@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RogueSurvivor">
+</Property><Property Name="Solution File" Value="C:\projets\dotnet\Rogue Survivor 6.11\RogueSurvivor.sln">
+</Property><Property Name="Date" Value="samedi 24 décembre 2011">
+</Property><Property Name="Time" Value="11:25">
+</Property></Properties><Event ErrorLevel="0" Project="RogueSurvivor" Source="WRogue\RogueSurvivor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RogueSurvivor" Source="WRogue\RogueSurvivor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Config" Source="Setup\Config.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Config" Source="Setup\Config.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RogueSurvivor.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RogueSurvivor.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RogueSurvivor" Source="WRogue\RogueSurvivor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Config" Source="Setup\Config.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

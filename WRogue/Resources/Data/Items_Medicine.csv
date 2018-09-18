@@ -1,0 +1,7 @@
+"ID","NAME","PLURAL","HP","STA","SLP","INF","SAN","STACKING","FLAVOR"
+"MEDICINE_BANDAGES","bandages","bandages",2,0,0,0,0,5,"Nothing. A little blood."
+"MEDICINE_MEDIKIT","medikit","medikit",10,0,0,4,0,0,"Saves lives. Especially yours."
+"MEDICINE_PILLS_STA","green pills","green pills",0,20,0,0,0,20,"Gives a good kick in the ass."
+"MEDICINE_PILLS_SLP","blue pills","blue pills",0,0,120,0,0,20,"HEY! WAKE UP!"
+"MEDICINE_PILLS_SAN","orange pills","orange pills",0,0,0,0,30,20,"Everything will be fine."
+"MEDICINE_PILLS_ANTIVIRAL","antiviral pills","antiviral pills",0,0,0,12,0,6,"Kill it with pills."

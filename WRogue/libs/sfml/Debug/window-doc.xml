@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sfmlnet-window</name>
+    </assembly>
+    <members>
+        <member name="T:SFML.Window.KeyEventArgs">
+            <summary>
+            Keyboard event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.KeyEventArgs.#ctor(SFML.Window.KeyEvent)">
+            <summary>
+            Construct the key arguments from a key event
+            </summary>
+            <param name="e">Key event</param>
+        </member>
+        <member name="F:SFML.Window.KeyEventArgs.Code">
+            <summary>Code of the key (see KeyCode enum)</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEventArgs.Alt">
+            <summary>Is the Alt modifier pressed?</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEventArgs.Control">
+            <summary>Is the Control modifier pressed?</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEventArgs.Shift">
+            <summary>Is the Shift modifier pressed?</summary>
+        </member>
+        <member name="T:SFML.Window.TextEventArgs">
+            <summary>
+            Text event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.TextEventArgs.#ctor(SFML.Window.TextEvent)">
+            <summary>
+            Construct the text arguments from a text event
+            </summary>
+            <param name="e">Text event</param>
+        </member>
+        <member name="F:SFML.Window.TextEventArgs.Unicode">
+            <summary>UTF-16 value of the character</summary>
+        </member>
+        <member name="T:SFML.Window.MouseMoveEventArgs">
+            <summary>
+            Mouse move event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.MouseMoveEventArgs.#ctor(SFML.Window.MouseMoveEvent)">
+            <summary>
+            Construct the mouse move arguments from a mouse move event
+            </summary>
+            <param name="e">Mouse move event</param>
+        </member>
+        <member name="F:SFML.Window.MouseMoveEventArgs.X">
+            <summary>X coordinate of the mouse cursor</summary>
+        </member>
+        <member name="F:SFML.Window.MouseMoveEventArgs.Y">
+            <summary>Y coordinate of the mouse cursor</summary>
+        </member>
+        <member name="T:SFML.Window.MouseButtonEventArgs">
+            <summary>
+            Mouse buttons event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.MouseButtonEventArgs.#ctor(SFML.Window.MouseButtonEvent)">
+            <summary>
+            Construct the mouse button arguments from a mouse button event
+            </summary>
+            <param name="e">Mouse button event</param>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEventArgs.Button">
+            <summary>Code of the button (see MouseButton enum)</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEventArgs.X">
+            <summary>X coordinate of the mouse cursor</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEventArgs.Y">
+            <summary>Y coordinate of the mouse cursor</summary>
+        </member>
+        <member name="T:SFML.Window.MouseWheelEventArgs">
+            <summary>
+            Mouse wheel event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.MouseWheelEventArgs.#ctor(SFML.Window.MouseWheelEvent)">
+            <summary>
+            Construct the mouse wheel arguments from a mouse wheel event
+            </summary>
+            <param name="e">Mouse wheel event</param>
+        </member>
+        <member name="F:SFML.Window.MouseWheelEventArgs.Delta">
+            <summary>Scroll amount</summary>
+        </member>
+        <member name="T:SFML.Window.JoyMoveEventArgs">
+            <summary>
+            Joystick axis move event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.JoyMoveEventArgs.#ctor(SFML.Window.JoyMoveEvent)">
+            <summary>
+            Construct the joystick move arguments from a joystick move event
+            </summary>
+            <param name="e">Joystick move event</param>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEventArgs.JoystickId">
+            <summary>Index of the joystick which triggered the event</summary>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEventArgs.Axis">
+            <summary>Joystick axis (see JoyAxis enum)</summary>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEventArgs.Position">
+            <summary>Current position of the axis</summary>
+        </member>
+        <member name="T:SFML.Window.JoyButtonEventArgs">
+            <summary>
+            Joystick buttons event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.JoyButtonEventArgs.#ctor(SFML.Window.JoyButtonEvent)">
+            <summary>
+            Construct the joystick button arguments from a joystick button event
+            </summary>
+            <param name="e">Joystick button event</param>
+        </member>
+        <member name="F:SFML.Window.JoyButtonEventArgs.JoystickId">
+            <summary>Index of the joystick which triggered the event</summary>
+        </member>
+        <member name="F:SFML.Window.JoyButtonEventArgs.Button">
+            <summary>Index of the button</summary>
+        </member>
+        <member name="T:SFML.Window.SizeEventArgs">
+            <summary>
+            Size event parameters
+            </summary>
+        </member>
+        <member name="M:SFML.Window.SizeEventArgs.#ctor(SFML.Window.SizeEvent)">
+            <summary>
+            Construct the size arguments from a size event
+            </summary>
+            <param name="e">Size event</param>
+        </member>
+        <member name="F:SFML.Window.SizeEventArgs.Width">
+            <summary>New width of the window</summary>
+        </member>
+        <member name="F:SFML.Window.SizeEventArgs.Height">
+            <summary>New height of the window</summary>
+        </member>
+        <member name="T:SFML.ObjectBase">
+            <summary>
+            The ObjectBase class is an abstract base for every
+            SFML object. It's meant for internal use only
+            </summary>
+        </member>
+        <member name="M:SFML.ObjectBase.#ctor(System.IntPtr)">
+            <summary>
+            Construct the object from a pointer to the C library object
+            </summary>
+            <param name="thisPtr">Internal pointer to the object in the C libraries</param>
+        </member>
+        <member name="M:SFML.ObjectBase.Finalize">
+            <summary>
+            Dispose the object
+            </summary>
+        </member>
+        <member name="M:SFML.ObjectBase.Dispose">
+            <summary>
+            Explicitely dispose the object
+            </summary>
+        </member>
+        <member name="M:SFML.ObjectBase.Dispose(System.Boolean)">
+            <summary>
+            Destroy the object
+            </summary>
+            <param name="disposing">Is the GC disposing the object, or is it an explicit call ?</param>
+        </member>
+        <member name="M:SFML.ObjectBase.Destroy(System.Boolean)">
+            <summary>
+            Destroy the object (implementation is left to each derived class)
+            </summary>
+            <param name="disposing">Is the GC disposing the object, or is it an explicit call ?</param>
+        </member>
+        <member name="M:SFML.ObjectBase.SetThis(System.IntPtr)">
+            <summary>
+            Set the pointer to the internal object. For internal use only
+            </summary>
+            <param name="thisPtr">Pointer to the internal object in C library</param>
+        </member>
+        <member name="P:SFML.ObjectBase.This">
+            <summary>
+            Access to the internal pointer of the object.
+            For internal use only
+            </summary>
+        </member>
+        <member name="T:SFML.Window.Input">
+            <summary>
+            Input handles real-time input from keyboard and mouse.
+            Use it instead of events to handle continuous moves and more
+            game-friendly inputs
+            </summary>
+        </member>
+        <member name="M:SFML.Window.Input.IsKeyDown(SFML.Window.KeyCode)">
+            <summary>
+            Get the state of a key
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>True if key is down, false if key is up</returns>
+        </member>
+        <member name="M:SFML.Window.Input.IsMouseButtonDown(SFML.Window.MouseButton)">
+            <summary>
+            Get the state of a mouse button
+            </summary>
+            <param name="button">Button to check</param>
+            <returns>True if button is down, false if button is up</returns>
+        </member>
+        <member name="M:SFML.Window.Input.IsJoystickButtonDown(System.UInt32,System.UInt32)">
+            <summary>
+            Get the state of a joystick button
+            </summary>
+            <param name="joystickId">Identifier of the joystick to check (0 or 1)</param>
+            <param name="button">Button to check</param>
+            <returns>True if button is down, false if button is up</returns>
+        </member>
+        <member name="M:SFML.Window.Input.GetMouseX">
+            <summary>
+            Get the mouse X position
+            </summary>
+            <returns>Current mouse left position, relative to owner window</returns>
+        </member>
+        <member name="M:SFML.Window.Input.GetMouseY">
+            <summary>
+            Get the mouse Y position
+            </summary>
+            <returns>Current mouse top position, relative to owner window</returns>
+        </member>
+        <member name="M:SFML.Window.Input.GetJoystickAxis(System.UInt32,SFML.Window.JoyAxis)">
+            <summary>
+            Get a joystick axis position
+            </summary>
+            <param name="joystickId">Identifier of the joystick to check (0 or 1)</param>
+            <param name="axis">Axis to get</param>
+            <returns>Current axis position, in the range [-100, 100] (except for POV, which is [0, 360])</returns>
+        </member>
+        <member name="M:SFML.Window.Input.#ctor(System.IntPtr)">
+            <summary>
+            For internal use only, construct the instance from a direct pointer to the internal object
+            </summary>
+            <param name="thisPtr">Internal pointer to the input object</param>
+        </member>
+        <member name="M:SFML.Window.Input.Destroy(System.Boolean)">
+            <summary>
+            Handle the destruction of the object
+            </summary>
+            <param name="disposing">Is the GC disposing the object, or is it an explicit call ?</param>
+        </member>
+        <member name="T:SFML.Window.VideoMode">
+            <summary>
+            VideoMode defines a video mode (width, height, bpp, frequency)
+            and provides static functions for getting modes supported
+            by the display device
+            </summary>
+        </member>
+        <member name="M:SFML.Window.VideoMode.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+            Construct the video mode with its width and height
+            </summary>
+            <param name="width">Video mode width</param>
+            <param name="height">Video mode height</param>
+        </member>
+        <member name="M:SFML.Window.VideoMode.#ctor(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Construct the video mode with its width, height and depth
+            </summary>
+            <param name="width">Video mode width</param>
+            <param name="height">Video mode height</param>
+            <param name="bpp">Video mode depth (bits per pixel)</param>
+        </member>
+        <member name="M:SFML.Window.VideoMode.IsValid">
+            <summary>
+            Tell whether or not the video mode is supported
+            </summary>
+            <returns>True if the video mode is valid, false otherwise</returns>
+        </member>
+        <member name="M:SFML.Window.VideoMode.GetMode(System.UInt32)">
+            <summary>
+            Get a valid video mode.
+            Index must be in range [0, ModesCount[.
+            Modes are sorted from best to worst
+            </summary>
+            <param name="index">Index of the video mode to get</param>
+            <returns>index-th video mode</returns>
+        </member>
+        <member name="F:SFML.Window.VideoMode.Width">
+            <summary>Video mode width, in pixels</summary>
+        </member>
+        <member name="F:SFML.Window.VideoMode.Height">
+            <summary>Video mode height, in pixels</summary>
+        </member>
+        <member name="F:SFML.Window.VideoMode.BitsPerPixel">
+            <summary>Video mode depth, in bits per pixel</summary>
+        </member>
+        <member name="P:SFML.Window.VideoMode.ModesCount">
+            <summary>
+            Get the number of valid video modes
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:SFML.Window.VideoMode.DesktopMode" -->
+        <member name="T:SFML.Window.WindowSettings">
+            <summary>
+            Structure defining the creation settings of windows
+            </summary>
+        </member>
+        <member name="M:SFML.Window.WindowSettings.#ctor(System.UInt32,System.UInt32)">
+            <summary>
+            Construct the settings from depth / stencil bits
+            </summary>
+            <param name="depthBits">Depth buffer bits</param>
+            <param name="stencilBits">Stencil buffer bits</param>
+        </member>
+        <member name="M:SFML.Window.WindowSettings.#ctor(System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            Construct the settings from depth / stencil bits and antialiasing level
+            </summary>
+            <param name="depthBits">Depth buffer bits</param>
+            <param name="stencilBits">Stencil buffer bits</param>
+            <param name="antialiasingLevel">Antialiasing level</param>
+        </member>
+        <member name="F:SFML.Window.WindowSettings.DepthBits">
+            <summary>Depth buffer bits (0 is disabled)</summary>
+        </member>
+        <member name="F:SFML.Window.WindowSettings.StencilBits">
+            <summary>Stencil buffer bits (0 is disabled)</summary>
+        </member>
+        <member name="F:SFML.Window.WindowSettings.AntialiasingLevel">
+            <summary>Antialiasing level (0 is disabled)</summary>
+        </member>
+        <member name="T:SFML.LoadingFailedException">
+            <summary>
+            Exception thrown by SFML whenever loading a resource fails
+            </summary>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor">
+            <summary>
+            Default constructor (unknown error)
+            </summary>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor(System.String)">
+            <summary>
+            Failure to load a resource from memory
+            </summary>
+            <param name="resourceName">Name of the resource</param>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Failure to load a resource from memory
+            </summary>
+            <param name="resourceName">Name of the resource</param>
+            <param name="innerException">Exception which is the cause ofthe current exception</param>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor(System.String,System.String)">
+            <summary>
+            Failure to load a resource from a file
+            </summary>
+            <param name="resourceName">Name of the resource</param>
+            <param name="filename">Path of the file</param>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Failure to load a resource from a file
+            </summary>
+            <param name="resourceName">Name of the resource</param>
+            <param name="filename">Path of the file</param>
+            <param name="innerException">Exception which is the cause ofthe current exception</param>
+        </member>
+        <member name="M:SFML.LoadingFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initialize an instance of the exception with serialized data
+            </summary>
+            <param name="info">Serialized data</param>
+            <param name="context">Contextual informations</param>
+        </member>
+        <member name="T:SFML.Window.KeyCode">
+            <summary>
+            Definition of key codes for keyboard events
+            </summary>
+        </member>
+        <member name="T:SFML.Window.MouseButton">
+            <summary>
+            Definition of button codes for mouse events
+            </summary>
+        </member>
+        <member name="F:SFML.Window.MouseButton.Left">
+            <summary>Left mouse button</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButton.Right">
+            <summary>Right mouse button</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButton.Middle">
+            <summary>Center (wheel) mouse button</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButton.XButton1">
+            <summary>First extra button</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButton.XButton2">
+            <summary>Second extra button</summary>
+        </member>
+        <member name="T:SFML.Window.JoyAxis">
+            <summary>
+            Definition of joystick axis for joystick events
+            </summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisX">
+            <summary>X axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisY">
+            <summary>Y axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisZ">
+            <summary>Z axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisR">
+            <summary>R axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisU">
+            <summary>U axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisV">
+            <summary>V axis</summary>
+        </member>
+        <member name="F:SFML.Window.JoyAxis.AxisPOV">
+            <summary>Point of view</summary>
+        </member>
+        <member name="T:SFML.Window.EventType">
+            <summary>
+            Enumeration of the different types of events
+            </summary>
+        </member>
+        <member name="F:SFML.Window.EventType.Closed">
+            <summary>Event triggered when a window is manually closed</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.Resized">
+            <summary>Event triggered when a window is resized</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.LostFocus">
+            <summary>Event triggered when a window loses the focus</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.GainedFocus">
+            <summary>Event triggered when a window gains the focus</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.TextEntered">
+            <summary>Event triggered when a valid character is entered</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.KeyPressed">
+            <summary>Event triggered when a keyboard key is pressed</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.KeyReleased">
+            <summary>Event triggered when a keyboard key is released</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseWheelMoved">
+            <summary>Event triggered when the mouse wheel is scrolled</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseButtonPressed">
+            <summary>Event triggered when a mouse button is pressed</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseButtonReleased">
+            <summary>Event triggered when a mouse button is released</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseMoved">
+            <summary>Event triggered when the mouse moves within the area of a window</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseEntered">
+            <summary>Event triggered when the mouse enters the area of a window</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.MouseLeft">
+            <summary>Event triggered when the mouse leaves the area of a window</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.JoyButtonPressed">
+            <summary>Event triggered when a joystick button is pressed</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.JoyButtonReleased">
+            <summary>Event triggered when a joystick button is released</summary>
+        </member>
+        <member name="F:SFML.Window.EventType.JoyMoved">
+            <summary>Event triggered when a joystick axis moves</summary>
+        </member>
+        <member name="T:SFML.Window.KeyEvent">
+            <summary>
+            Keyboard event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.KeyEvent.Code">
+            <summary>Code of the key (see KeyCode enum)</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEvent.Alt">
+            <summary>Is the Alt modifier pressed?</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEvent.Control">
+            <summary>Is the Control modifier pressed?</summary>
+        </member>
+        <member name="F:SFML.Window.KeyEvent.Shift">
+            <summary>Is the Shift modifier pressed?</summary>
+        </member>
+        <member name="T:SFML.Window.TextEvent">
+            <summary>
+            Text event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.TextEvent.Unicode">
+            <summary>UTF-32 value of the character</summary>
+        </member>
+        <member name="T:SFML.Window.MouseMoveEvent">
+            <summary>
+            Mouse move event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.MouseMoveEvent.X">
+            <summary>X coordinate of the mouse cursor</summary>
+        </member>
+        <member name="F:SFML.Window.MouseMoveEvent.Y">
+            <summary>Y coordinate of the mouse cursor</summary>
+        </member>
+        <member name="T:SFML.Window.MouseButtonEvent">
+            <summary>
+            Mouse buttons event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEvent.Button">
+            <summary>Code of the button (see MouseButton enum)</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEvent.X">
+            <summary>X coordinate of the mouse cursor</summary>
+        </member>
+        <member name="F:SFML.Window.MouseButtonEvent.Y">
+            <summary>Y coordinate of the mouse cursor</summary>
+        </member>
+        <member name="T:SFML.Window.MouseWheelEvent">
+            <summary>
+            Mouse wheel event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.MouseWheelEvent.Delta">
+            <summary>Scroll amount</summary>
+        </member>
+        <member name="T:SFML.Window.JoyMoveEvent">
+            <summary>
+            Joystick axis move event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEvent.JoystickId">
+            <summary>Index of the joystick which triggered the event</summary>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEvent.Axis">
+            <summary>Joystick axis (see JoyAxis enum)</summary>
+        </member>
+        <member name="F:SFML.Window.JoyMoveEvent.Position">
+            <summary>Current position of the axis</summary>
+        </member>
+        <member name="T:SFML.Window.JoyButtonEvent">
+            <summary>
+            Joystick buttons event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.JoyButtonEvent.JoystickId">
+            <summary>Index of the joystick which triggered the event</summary>
+        </member>
+        <member name="F:SFML.Window.JoyButtonEvent.Button">
+            <summary>Index of the button</summary>
+        </member>
+        <member name="T:SFML.Window.SizeEvent">
+            <summary>
+            Size event parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.SizeEvent.Width">
+            <summary>New width of the window</summary>
+        </member>
+        <member name="F:SFML.Window.SizeEvent.Height">
+            <summary>New height of the window</summary>
+        </member>
+        <member name="T:SFML.Window.Event">
+            <summary>
+            Event defines a system event and its parameters
+            </summary>
+        </member>
+        <member name="F:SFML.Window.Event.Type">
+            <summary>Type of event (see EventType enum)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.Key">
+            <summary>Arguments for key events (KeyPressed, KeyReleased)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.Text">
+            <summary>Arguments for text events (TextEntered)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.MouseMove">
+            <summary>Arguments for mouse move events (MouseMoved)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.MouseButton">
+            <summary>Arguments for mouse button events (MouseButtonPressed, MouseButtonReleased)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.MouseWheel">
+            <summary>Arguments for mouse wheel events (MouseWheelMoved)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.JoyMove">
+            <summary>Arguments for joystick axis events (JoyMoved)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.JoyButton">
+            <summary>Arguments for joystick button events (JoyButtonPressed, JoyButtonReleased)</summary>
+        </member>
+        <member name="F:SFML.Window.Event.Size">
+            <summary>Arguments for size events (Resized)</summary>
+        </member>
+        <member name="T:SFML.Window.Styles">
+            <summary>
+            Enumeration of window creation styles
+            </summary>
+        </member>
+        <member name="F:SFML.Window.Styles.None">
+            <summary>No border / title bar (this flag and all others are mutually exclusive)</summary>
+        </member>
+        <member name="F:SFML.Window.Styles.Titlebar">
+            <summary>Title bar + fixed border</summary>
+        </member>
+        <member name="F:SFML.Window.Styles.Resize">
+            <summary>Titlebar + resizable border + maximize button</summary>
+        </member>
+        <member name="F:SFML.Window.Styles.Close">
+            <summary>Titlebar + close button</summary>
+        </member>
+        <member name="F:SFML.Window.Styles.Fullscreen">
+            <summary>Fullscreen mode (this flag and all others are mutually exclusive))</summary>
+        </member>
+        <member name="T:SFML.Window.Window">
+            <summary>
+            Window is a rendering window ; it can create a new window
+            or connect to an existing one
+            </summary>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(SFML.Window.VideoMode,System.String)">
+            <summary>
+            Create the window with default style and creation settings
+            </summary>
+            <param name="mode">Video mode to use</param>
+            <param name="title">Title of the window</param>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(SFML.Window.VideoMode,System.String,SFML.Window.Styles)">
+            <summary>
+            Create the window with default creation settings
+            </summary>
+            <param name="mode">Video mode to use</param>
+            <param name="title">Title of the window</param>
+            <param name="style">Window style (Resize | Close by default)</param>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(SFML.Window.VideoMode,System.String,SFML.Window.Styles,SFML.Window.WindowSettings)">
+            <summary>
+            Create the window
+            </summary>
+            <param name="mode">Video mode to use</param>
+            <param name="title">Title of the window</param>
+            <param name="style">Window style (Resize | Close by default)</param>
+            <param name="settings">Creation parameters</param>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(System.IntPtr)">
+            <summary>
+            Create the window from an existing control with default creation settings
+            </summary>
+            <param name="handle">Platform-specific handle of the control</param>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(System.IntPtr,SFML.Window.WindowSettings)">
+            <summary>
+            Create the window from an existing control
+            </summary>
+            <param name="Handle">Platform-specific handle of the control</param>
+            <param name="settings">Creation parameters</param>
+        </member>
+        <member name="M:SFML.Window.Window.IsOpened">
+            <summary>
+            Tell whether or not the window is opened (ie. has been created).
+            Note that a hidden window (Show(false))
+            will still return true
+            </summary>
+            <returns>True if the window is opened</returns>
+        </member>
+        <member name="M:SFML.Window.Window.Close">
+            <summary>
+            Close (destroy) the window.
+            The Window instance remains valid and you can call
+            Create to recreate the window
+            </summary>
+        </member>
+        <member name="M:SFML.Window.Window.Display">
+            <summary>
+            Display the window on screen
+            </summary>
+        </member>
+        <member name="M:SFML.Window.Window.UseVerticalSync(System.Boolean)">
+            <summary>
+            Enable / disable vertical synchronization
+            </summary>
+            <param name="enable">True to enable v-sync, false to deactivate</param>
+        </member>
+        <member name="M:SFML.Window.Window.ShowMouseCursor(System.Boolean)">
+            <summary>
+            Show or hide the mouse cursor
+            </summary>
+            <param name="show">True to show, false to hide</param>
+        </member>
+        <member name="M:SFML.Window.Window.SetCursorPosition(System.UInt32,System.UInt32)">
+            <summary>
+            Change the position of the mouse cursor
+            </summary>
+            <param name="x">Left coordinate of the cursor, relative to the window</param>
+            <param name="y">Top coordinate of the cursor, relative to the window</param>
+        </member>
+        <member name="M:SFML.Window.Window.SetPosition(System.Int32,System.Int32)">
+            <summary>
+            Change the position of the window on screen.
+            Only works for top-level windows
+            </summary>
+            <param name="x">Left position</param>
+            <param name="y">Top position</param>
+        </member>
+        <member name="M:SFML.Window.Window.SetSize(System.UInt32,System.UInt32)">
+            <summary>
+            Change the size of the rendering region of the window
+            </summary>
+            <param name="width">New width</param>
+            <param name="height">New height</param>
+        </member>
+        <member name="M:SFML.Window.Window.Show(System.Boolean)">
+            <summary>
+            Show or hide the window
+            </summary>
+            <param name="show">True to show, false to hide</param>
+        </member>
+        <member name="M:SFML.Window.Window.EnableKeyRepeat(System.Boolean)">
+            <summary>
+            Enable or disable automatic key-repeat.
+            Automatic key-repeat is enabled by default
+            </summary>
+            <param name="enable">True to enable, false to disable</param>
+        </member>
+        <member name="M:SFML.Window.Window.SetIcon(System.UInt32,System.UInt32,System.Byte[])">
+            <summary>
+            Change the window's icon
+            </summary>
+            <param name="width">Icon's width, in pixels</param>
+            <param name="height">Icon's height, in pixels</param>
+            <param name="pixels">Array of pixels, format must be RGBA 32 bits</param>
+        </member>
+        <member name="M:SFML.Window.Window.SetActive">
+            <summary>
+            Activate the window as the current target
+            for rendering
+            </summary>
+            <returns>True if operation was successful, false otherwise</returns>
+        </member>
+        <member name="M:SFML.Window.Window.SetActive(System.Boolean)">
+            <summary>
+            Activate of deactivate the window as the current target
+            for rendering
+            </summary>
+            <param name="active">True to activate, false to deactivate (true by default)</param>
+            <returns>True if operation was successful, false otherwise</returns>
+        </member>
+        <member name="M:SFML.Window.Window.SetFramerateLimit(System.UInt32)">
+            <summary>
+            Limit the framerate to a maximum fixed frequency
+            </summary>
+            <param name="limit">Framerate limit, in frames per seconds (use 0 to disable limit)</param>
+        </member>
+        <member name="M:SFML.Window.Window.GetFrameTime">
+            <summary>
+            Get time elapsed since last frame
+            </summary>
+            <returns>Time elapsed, in seconds</returns>
+        </member>
+        <member name="M:SFML.Window.Window.SetJoystickThreshold(System.Single)">
+            <summary>
+            Change the joystick threshold, ie. the value below which
+            no move event will be generated
+            </summary>
+            <param name="threshold">New threshold, in range [0, 100]</param>
+        </member>
+        <member name="M:SFML.Window.Window.DispatchEvents">
+            <summary>
+            Call the event handlers for each pending event.
+            Use of this function is exclusive with the Events property (use one or the other)
+            </summary>
+        </member>
+        <member name="M:SFML.Window.Window.#ctor(System.IntPtr,System.Int32)">
+            <summary>
+            Constructor for derived classes
+            </summary>
+            <param name="thisPtr">Pointer to the internal object</param>
+            <param name="dummy">Internal hack :)</param>
+        </member>
+        <member name="M:SFML.Window.Window.GetEvent(SFML.Window.Event@)">
+            <summary>
+            Internal function to get the next event
+            </summary>
+            <param name="eventToFill">Variable to fill with the raw pointer to the event structure</param>
+            <returns>True if there was an event, false otherwise</returns>
+        </member>
+        <member name="M:SFML.Window.Window.Destroy(System.Boolean)">
+            <summary>
+            Handle the destruction of the object
+            </summary>
+            <param name="disposing">Is the GC disposing the object, or is it an explicit call ?</param>
+        </member>
+        <member name="P:SFML.Window.Window.Input">
+            <summary>
+            Input manager of the window
+            </summary>
+        </member>
+        <member name="P:SFML.Window.Window.Width">
+            <summary>
+            Width of the rendering region of the window
+            </summary>
+        </member>
+        <member name="P:SFML.Window.Window.Height">
+            <summary>
+            Height of the rendering region of the window
+            </summary>
+        </member>
+        <member name="P:SFML.Window.Window.Settings">
+            <summary>
+            Creation settings of the window
+            </summary>
+        </member>
+        <member name="E:SFML.Window.Window.Closed">
+            <summary>Event handler for the Closed event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.Resized">
+            <summary>Event handler for the Resized event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.LostFocus">
+            <summary>Event handler for the LostFocus event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.GainedFocus">
+            <summary>Event handler for the GainedFocus event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.TextEntered">
+            <summary>Event handler for the TextEntered event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.KeyPressed">
+            <summary>Event handler for the KeyPressed event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.KeyReleased">
+            <summary>Event handler for the KeyReleased event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseWheelMoved">
+            <summary>Event handler for the MouseWheelMoved event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseButtonPressed">
+            <summary>Event handler for the MouseButtonPressed event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseButtonReleased">
+            <summary>Event handler for the MouseButtonReleased event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseMoved">
+            <summary>Event handler for the MouseMoved event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseEntered">
+            <summary>Event handler for the MouseEntered event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.MouseLeft">
+            <summary>Event handler for the MouseLeft event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.JoyButtonPressed">
+            <summary>Event handler for the JoyButtonPressed event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.JoyButtonReleased">
+            <summary>Event handler for the JoyButtonReleased event</summary>
+        </member>
+        <member name="E:SFML.Window.Window.JoyMoved">
+            <summary>Event handler for the JoyMoved event</summary>
+        </member>
+    </members>
+</doc>
