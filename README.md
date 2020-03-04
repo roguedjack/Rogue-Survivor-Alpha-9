@@ -1,6 +1,12 @@
 # Rogue Survivor Alpha 9
 Rogue Survivor game original source code from 2012
 
+<h3>** OUTDATED **</h3>
+<p>
+If you want the <i><b>latest available source code</b></i> download the latest zipped source from the game blog here : <br>
+  http://roguesurvivor.blogspot.com/p/download.html <br>
+The zip includes the resources and the Visual Studio project, everything you need to start your project from it. The license still applies.
+</p>
 
 <h3>WHAT IS THIS</h3>
 <p>
