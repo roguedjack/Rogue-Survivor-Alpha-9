@@ -1,0 +1,5 @@
+"ID","NAME","PLURAL","STACKING","ACTIVATES WHEN DROPPED?","USE TO ACTIVATE?","TRIGGER CHANCE per quantity","DAMAGE per quantity","DESACTIVATES WHEN TRIGGERED ?","BREAK CHANCE when TRIGGERED","BLOCK CHANCE per item","BREAK CHANCE when ESCAPE","IS NOISY?","NOISE NAME","IS_FLAMMABLE? (unused yet)","FLAVOR"
+"TRAP_EMPTY_CAN","empty can","empty cans",3,1,0,33,0,0,50,0,0,1,"can cacophony",0,"Recycling, anyone ?"
+"TRAP_BEAR_TRAP","bear trap","bear traps",0,0,1,50,15,1,5,50,25,1,"loud CLANG",0,"Come for a hug."
+"TRAP_SPIKES","spike","spikes",8,1,0,10,1,0,5,0,0,0,"n/a",0,"Foot massage."
+"TRAP_BARBED_WIRE","barbed wire","barbed wires",3,0,1,33,3,0,0,25,33,0,"n/a",0,"Leg massage."

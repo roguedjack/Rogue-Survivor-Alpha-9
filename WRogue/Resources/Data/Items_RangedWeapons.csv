@@ -1,0 +1,11 @@
+ID,NAME,PLURAL,ATK,RAPID1,RAPID2,DMG,RANGE,MAXAMMO,FLAVOR
+RANGED_ARMY_PISTOL,army pistol,army pistols,24,12,6,24,6,12,Bang bang!
+RANGED_ARMY_RIFLE,army rifle,army rifles,30,15,7,40,8,10,Aim. Shoot. Kill.
+RANGED_HUNTING_CROSSBOW,hunting crossbow,hunting crossbows,20,10,5,16,5,20,Aim between the eyes.
+RANGED_HUNTING_RIFLE,hunting rifle,hunting rifles,30,15,10,20,8,7,Good hunting!
+RANGED_PISTOL,pistol,pistols,20,18,16,18,6,10,Bang!
+RANGED_KOLT_REVOLVER,Kolt revolver,Kolt revolvers,20,10,5,26,6,6,K for Kolt.
+RANGED_PRECISION_RIFLE,precision rifle,precision rifles,80,10,5,20,8,2,Precise death.
+RANGED_SHOTGUN,shotgun,shotguns,60,40,15,30,3,5,Devastating at close range.
+UNIQUE_SANTAMAN_SHOTGUN,Santaman shotgun,Santaman shotgun,60,40,15,30,4,5,Merry Shotmas!
+UNIQUE_HANS_VON_HANZ_PISTOL,Hans von Hanz pistol,Hans von Hanz pistol,40,30,20,22,6,14,Feuer!

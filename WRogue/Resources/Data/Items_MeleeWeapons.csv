@@ -1,0 +1,17 @@
+ID,NAME,PLURAL,ATK,DMG,STA,DISARM,TOOLBASHDMGBONUS,TOOLBUILDBONUS,STACKINGLIMIT,ISFRAGILE,FLAVOR
+MELEE_BASEBALLBAT,baseball bat,baseball bats,6,6,0,10,0,0.00,1,0,Homerun!
+MELEE_COMBAT_KNIFE,combat knife,combat knives,2,8,0,0,0,0.00,2,0,Stab. Then stab some more.
+MELEE_CROWBAR,crowbar,crowbars,3,2,0,0,18,0.15,3,0,A hero and his crowbar.
+UNIQUE_JASON_MYERS_AXE,Jason Myers axe,Jason Myers axe,14,14,4,10,0,0.00,1,0,Free the serial killer in you!
+MELEE_HUGE_HAMMER,huge hammer,huge hammers,16,16,6,10,8,0.15,1,0,Hammer time!
+MELEE_GOLFCLUB,golf club,golf clubs,8,4,0,10,0,0.00,1,1,Play fair.
+MELEE_IRON_GOLFCLUB,iron golf club,iron golf clubs,8,6,1,10,0,0.00,1,0,Play hard.
+MELEE_SHOVEL,shovel,shovels,10,10,2,10,5,0.10,1,0,Makes a satisfying sound upon impact.
+MELEE_SHORT_SHOVEL,short shovel,short shovels,6,8,0,0,4,0.25,1,1,Dig small holes. In heads.
+MELEE_TRUNCHEON,truncheon,truncheons,2,2,0,5,0,0.00,5,0,Move along please.
+MELEE_IMPROVISED_CLUB,improvised club,improvised club,0,3,0,5,0,0.10,3,1,Improvised bashing.
+MELEE_IMPROVISED_SPEAR,improvised spear,improvised spear,2,2,0,5,0,0.00,2,1,Improvised piercing.
+MELEE_SMALL_HAMMER,small hammer,small hammers,2,3,0,0,6,0.50,3,0,(small)Hammer time!
+UNIQUE_FAMU_FATARU_KATANA,Famu Fataru katana,Famu Fataru katana,20,12,2,10,0,0.00,1,0,Watashi wa no teki o kiru.
+UNIQUE_BIGBEAR_BAT,Big Bear bat,Big Bear bat,8,14,1,15,0,0.00,1,0,Smash the fools in the head.
+UNIQUE_ROGUEDJACK_KEYBOARD,Roguedjack keyboard,Roguedjack,30,6,1,25,0,0.00,1,0,Le Basher De Bugs.

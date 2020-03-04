@@ -1,0 +1,3 @@
+"ID","NAME","PLURAL","FOV bonus","BATTERIES in hours","FLAVOR"
+"LIGHT_FLASHLIGHT","flashlight","flashlights",1,24,"Let There Be Light!"
+"LIGHT_BIG_FLASHLIGHT","big flashlight","big flashlights",2,8,"Let There Be MORE Light!"

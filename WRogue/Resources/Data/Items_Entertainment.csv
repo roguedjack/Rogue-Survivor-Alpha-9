@@ -1,0 +1,3 @@
+"ID","NAME","PLURAL","STACKING","VALUE","BORE CHANCE per use","FLAVOR"
+"ENT_BOOK","book","books",1,120,10,"Read while you still can."
+"ENT_MAGAZINE","magazine","magazines",10,60,100,"Emergency toilet paper."

@@ -1,0 +1,4 @@
+"ID","NAME","PLURAL","NUTRITION ratio of base food points","BESTBEFORE in days","STACKINGLIMIT","FLAVOR"
+"FOOD_ARMY_RATION","army ration","army rations",0.25,5,1,"Eat like a good soldier!"
+"FOOD_CANNED_FOOD","canned food","canned food",0.11,-1,3,"Better than dog food."
+"FOOD_GROCERIES","groceries","groceries",0.33,3,1,"They eat brains, you eat vegetables."

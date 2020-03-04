@@ -1,0 +1,5 @@
+ID,NAME,PLURAL,BATTERIES in hours,HASCLOCK,FLAVOR
+TRACKER_CELL_PHONE,cell phone,cell phones,72,1,Hello? Still alive?
+TRACKER_ZTRACKER,Z-tracker,Z-trackers,8,0,Aliens?
+TRACKER_BLACKOPS,blackOps GPS,blackOps GPS,2,0,Good instadeath-Prediction System.
+TRACKER_POLICE_RADIO,police radio,police radios,8,1,Call 911 for zombies.
